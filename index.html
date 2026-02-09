@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART EVENT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Add New Event</h1>
+
+<form class="form">
+<label for=" Event Title">Title</label>
+<input type="text" id="title" name="title" placeholder="Enter Event Title" required>
+<br>
+<label for="date" pacleholder="enter the date">Date</label>
+<input type="date" id="date" name="date" required>
+<br>
+<label for="category">Category</label>
+<select id="category" name="category" required>
+        <option value="Select category">Select category</option>
+        <option value="Work">Work</option>
+        <option value="Webinar">Webinar</option>
+        <option value="Social Gathering">Social Gathering</option>
+        <option value="Conference">Conference</option>
+        <option value="Dinner Party">Dinner Party</option>
+</select>
+<br>
+<label for="description">Description</label>
+<br>
+<textarea id="description" name="description" rows="4" placeholder="Enter description"></textarea>
+<br>
+<button type="submit">Submit</button>
+</form>
+<script src="script.js"></script>
+<div class="container">
+<form class="form1">
+    <button type="clear all events">Clear All Events</button>
+    <button type="add sample events">Add Sample Events</button>
+</form>
+</div>
+</body>
+</html>
