@@ -9,10 +9,16 @@ console.log(title,date,category,description)
 const card=document.createElement("div")
 card.innerHTML=
 <div class="card">
-    <h2>$("title")</h2>
+    <h3>$("title")</h3>
     <p>$("date")</p>
-    <button>$("")</button>
+    <button class="delete-btn">❎</button>
 </div>
 });
 
 eventcard.appendChild(card)
+form.reset();
+eventContainer.addEventListener("click", function (e) {
+  if (e.target.classList.contains("delete-btn")) {
+    e.target.parentElement.remove();
+  }
+});

@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Add New Event</h1>
-
+    <h1>SMART EVENT DASHBOARD</h1>
+<div class="wrapper">
+    <div>
 <form class="form">
+     <h2>Add New Event</h2>
 <label for=" Event Title">Title</label>
 <input type="text" id="title" name="title" placeholder="Enter Event Title" required>
 <br>
@@ -32,12 +34,16 @@
 <br>
 <button type="submit">Submit</button>
 </form>
+</div>
 <script src="script.js"></script>
-<div class="container">
+<div>
 <form class="form1">
-    <button type="clear all events">Clear All Events</button>
-    <button type="add sample events">Add Sample Events</button>
+    <h2 class="head">MY EVENT</h2>
+    <button class="butt" type="clear all events">Clear All Events</button>
+    <button class="butt" type="add sample events">Add Sample Events</button>
 </form>
 </div>
+</div>  
+<div id="eventContainer"></div>
 </body>
 </html>
