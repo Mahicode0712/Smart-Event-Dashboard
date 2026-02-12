@@ -5,7 +5,7 @@ const clearBtn = document.getElementById('clearBtn');
 const sampleBtn = document.getElementById('sampleBtn');
 const keyOutput = document.getElementById('keyOutput');
 
-// 1. Function to Create and Append an Event Card
+// 1. Create and Append an Event Card
 function createEventCard(title, date, category, desc) {
     
     const emptyMsg = document.querySelector('.empty-msg');
@@ -32,7 +32,7 @@ function createEventCard(title, date, category, desc) {
     eventList.appendChild(card);
 }
 
-// 2. Handle Form Submission
+// 2. Form Submission
 eventForm.addEventListener('submit', function(e) {
     e.preventDefault(); 
 
@@ -53,7 +53,7 @@ eventForm.addEventListener('submit', function(e) {
     eventForm.reset();
 });
 
-// 3. Event Delegation for Delete Buttons
+// 3. Delete Buttons
 eventList.addEventListener('click', function(e) {
     
     if (e.target.classList.contains('delete-btn')) {
@@ -73,7 +73,7 @@ clearBtn.addEventListener('click', function() {
     eventList.innerHTML = '<p class="empty-msg">No events yet. Add your first event!</p>';
 });
 
-// 5. Add Sample Events (for testing)
+// 5. Add Sample Events 
 sampleBtn.addEventListener('click', function() {
     const samples = [
         { title: 'Web Dev II Exam', date: '2026-03-10', cat: 'Conference', desc: 'Final examination for Advanced JS.' },
@@ -85,13 +85,13 @@ sampleBtn.addEventListener('click', function() {
     });
 });
 
-// 6. Keyboard Interaction (Key Logger)
+// 6. Keyboard Interaction 
 document.addEventListener('keydown', function(e) {
     
     keyOutput.textContent = e.key === " " ? "Spacebar" : e.key;
     
     
-    keyOutput.style.color = "#ed8936";
+    keyOutput.style.color = "purple";
     setTimeout(() => {
         keyOutput.style.color = "inherit";
     }, 200);
